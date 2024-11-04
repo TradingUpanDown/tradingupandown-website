@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingUpAndDown Signals</title>
+    <link rel="icon" href="https://www.tradingupandown.com/assets/images/logo/Upandown_Logo_Favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Chart.js Library for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <div class="logo">
+            <img src="/assets/images/logo/Upandown_Logo_Favicon.png" alt="TradingUpAndDown Logo">
+        </div>
+        <div class="menu-bar">
+            <h1>Crypto - Live Signals</h1>
+        </div>
+    </header>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+
+        <!-- Bitcoin (BTC) Card -->
+        <div class="card signal">
+            <h3><img src="https://www.tradingupandown.com/assets/images/icons/crypto-icons/bitcoin-btc-logo.png" width="30" height="30" alt="BTC" class="coin-logo"> Bitcoin (BTC/USD)</h3>
+            <canvas id="btcChart"></canvas>
+            <div class="signal-details">
+                <p><strong>Class:</strong> Crypto</p>
+                <p><strong>Status:</strong> Open</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- Ripple (XRP) Card -->
+        <div class="card signal">
+            <h3><img src="https://www.tradingupandown.com/assets/assets/images/icons/crypto-icons/xrp-xrp-logo.png" width="30" height="30" alt="XRP" class="coin-logo"> Ripple (XRP/USD)</h3>
+            <canvas id="xrpChart"></canvas>
+            <div class="signal-details">
+                <p><strong>Class:</strong> Crypto</p>
+                <p><strong>Status:</strong> Open</p>
+                <p><strong>Action:</strong> Sell Limit</p>
+                <p><strong>Confidence:</strong> 36%</p>
+                <p><strong>Stop:</strong> 0.5755</p>
+                <p><strong>Entry:</strong> 0.5595</p>
+                <p><strong>Target:</strong> 0.5105</p>
+            </div>
+        </div>
+
+        <!-- Ethereum (ETH) Card -->
+        <div class="card signal">
+            <h3><img src="https://www.tradingupandown.com/assets/images/icons/crypto-icons/ethereum-eth-logo.png" width="30" height="30" alt="ETH" class="coin-logo"> Ethereum (ETH/USD)</h3>
+            <canvas id="ethChart"></canvas>
+            <div class="signal-details">
+                <p><strong>Class:</strong> Crypto</p>
+                <p><strong>Status:</strong> Open</p>
+                <p><strong>Action:</strong> Buy Stop</p>
+                <p><strong>Confidence:</strong> 84%</p>
+                <p><strong>Stop:</strong> 2610</p>
+                <p><strong>Entry:</strong> 2670</p>
+                <p><strong>Target:</strong> 2870</p>
+            </div>
+        </div>
+
+        <!-- Litecoin (LTC) Card -->
+        <div class="card signal">
+            <h3><img src="https://www.tradingupandown.com/assets/assets/images/icons/crypto-icons/litecoin-ltc-logo.png" width="30" height="30" alt="LTC" class="coin-logo"> Litecoin (LTC/USD)</h3>
+            <canvas id="ltcChart"></canvas>
+            <div class="signal-details">
+                <p><strong>Class:</strong> Crypto</p>
+                <p><strong>Status:</strong> Open</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 73.35</p>
+                <p><strong>Entry:</strong> 71.35</p>
+                <p><strong>Target:</strong> 65.35</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 TradingUpAndDown. All rights reserved.</p>
+            <p><a href="#contact">Contact Us</a> | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- External Script for Charts -->
+    <script>
+        function createChart(id, label, data, color) {
+            var ctx = document.getElementById(id).getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['10:00', '10:05', '10:10', '10:15', '10:20'],
+                    datasets: [{
+                        label: label,
+                        data: data,
+                        borderColor: color,
+                        borderWidth: 2,
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: false
+                        }
+                    }
+                }
+            });
+        }
+
+        // Creating charts for each crypto asset
+        createChart('btcChart', 'Bitcoin Price', [70250, 69800, 69400, 69250, 68900], 'rgba(255, 206, 86, 1)');
+        createChart('xrpChart', 'Ripple Price', [0.5755, 0.5720, 0.5650, 0.5595, 0.5550], 'rgba(153, 102, 255, 1)');
+        createChart('ethChart', 'Ethereum Price', [2610, 2630, 2650, 2670, 2700], 'rgba(54, 162, 235, 1)');
+        createChart('ltcChart', 'Litecoin Price', [73.35, 72.5, 72, 71.35, 70], 'rgba(75, 192, 192, 1)');
+    </script>
+</body>
+</html>

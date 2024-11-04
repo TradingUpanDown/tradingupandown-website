@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <!-- SEO Optimized Meta Tags -->
+    <meta name="description" content="TradingUpAndDown provides the latest in trading news, free trading signals, and tools to help traders make informed decisions.">
+    <meta name="keywords" content="Trading, Trading News, Free Signals, Forex, Crypto, Stocks, Commodities">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="TradingUpAndDown">
+    
+    <title>TradingUpAndDown | Trading News and Free Signals</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://prodstorage.azureedge.net/favicon.svg?v9056.22764" type="image/svg+xml">
+    
+    <!-- Chart.js Library for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <div class="logo">
+            <img src="website2/images/Upandown-logo.png" alt="TradingUpAndDown Logo">
+        </div>
+        <div class="menu-bar">
+            <h1>Live Trading Signals</h1>
+        </div>
+    </header>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <!-- Card Template for Trading Assets -->
+        <div class="buy-card signal">
+            <h3>EUR/NZD</h3>
+            <canvas id="eurNzdChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 40%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>EUR/GBP</h3>
+            <canvas id="eurGbpChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 60%</p>
+                <p><strong>Entry:</strong> 2590</p>
+                <p><strong>Target:</strong> 2740</p>
+                <p><strong>Stop:</strong> 2530</p>
+                <p><strong>Action:</strong> Sell Limit</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Pending</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>EUR/JPY</h3>
+            <canvas id="eurJpyChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 70%</p>
+                <p><strong>Entry:</strong> 66900</p>
+                <p><strong>Target:</strong> 69900</p>
+                <p><strong>Stop:</strong> 65700</p>
+                <p><strong>Action:</strong> Buy Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="buy-button">Buy</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>EUR/SEK</h3>
+            <canvas id="eurSekChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>EUR/USD</h3>
+            <canvas id="eurUsdChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>EUR/CHF</h3>
+            <canvas id="eurChfChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>GBP/CHF</h3>
+            <canvas id="gbpChfChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>USD/CHF</h3>
+            <canvas id="usdChfChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>USD/CAD</h3>
+            <canvas id="usdCadChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>USD/TRY</h3>
+            <canvas id="usdTryChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>AUD/JPY</h3>
+            <canvas id="audJpyChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>USD/JPY</h3>
+            <canvas id="usdJpyChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>GBP/USD</h3>
+            <canvas id="gbpUsdChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>GBP/JPY</h3>
+            <canvas id="gbpJpyChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+        <div class="buy-card signal">
+            <h3>AUD/USD</h3>
+            <canvas id="audUsdChart" width="400" height="200"></canvas>
+            <div class="signal-details">
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Class:</strong> FX</p>
+                <p><strong>Status:</strong> Open</p>
+            </div>
+            <div class="actions">
+                <button class="sell-button">Sell</button>
+            </div>
+        </div>
+
+    <!-- External Script for Charts -->
+    <script>
+        // Chart.js for displaying price data (example data for multiple assets)
+        function createChart(chartId, data) {
+            var ctx = document.getElementById(chartId).getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        label: data.label,
+                        data: data.prices,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2,
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: false
+                        }
+                    }
+                }
+            });
+        }
+
+        // Create charts for each canvas element
+        createChart('eurNzdChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/NZD Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('eurGbpChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/GBP Price', prices: [2590, 2600, 2580, 2595, 2590] });
+        createChart('eurJpyChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/JPY Price', prices: [66900, 67000, 66850, 66950, 66970] });
+        createChart('eurSekChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/SEK Price', prices: [1.15, 1.16, 1.14, 1.15, 1.15] });
+        createChart('eurUsdChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/USD Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('eurChfChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/CHF Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('gbpChfChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'GBP/CHF Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('usdChfChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'USD/CHF Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('usdCadChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'USD/CAD Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('usdTryChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'USD/TRY Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('audJpyChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'AUD/JPY Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('usdJpyChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'USD/JPY Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('gbpUsdChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'GBP/USD Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('gbpJpyChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'GBP/JPY Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+        createChart('audUsdChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'AUD/USD Price', prices: [1.15, 1.14, 1.16, 1.13, 1.15] });
+    </script>
+
+</body>
+</html>
