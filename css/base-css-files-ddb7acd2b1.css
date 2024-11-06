@@ -6766,13 +6766,13 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-    padding-top: 2rem!important;
+    padding-top: 1rem!important;
     padding-bottom: 2rem!important
 }
 
 .py-6 {
-    padding-top: 2.5rem!important;
-    padding-bottom: 2.5rem!important
+    padding-top: 0;
+    padding-bottom: 0
 }
 
 .py-7 {
@@ -12667,7 +12667,7 @@ header.position-fixed {
 
 footer {
     background-color: #191c1f;
-    padding: 64px 16px
+    padding: 0px 16px
 }
 
 footer .footer-top {
@@ -12898,7 +12898,7 @@ body {
     padding: 0;
     margin: 0;
     background: #f4be1c02;
-    color: #f4bf1c;
+    color: #1c1c1c;
     width: 100%
 }
 
@@ -15327,8 +15327,8 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
 
 #news {
     padding: 20px;
-    background-color: #f9f9f9; /* Adjust background color as needed */
-    border-top: 2px solid #333;
+    background-color: ; /* Adjust background color as needed */
+    border-top: 0px solid #333;
 }
 
 #news h2 {
@@ -15424,4 +15424,10 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
 
 .back-to-news:hover {
     text-decoration: underline;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Adjust the gap between columns as needed */
 }
