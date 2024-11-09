@@ -1,0 +1,5 @@
+Asset,Confidence,Entry,Target,Stop,Status
+Litecoin,40,72.5,67.5,74.5,Live Trade
+ETH,60,2590,2740,2530,Sell Limit
+BTC,70,66900,69900,65700,Buy Stop
+XRP,55,1.15,1.05,1.2,Sell Stop

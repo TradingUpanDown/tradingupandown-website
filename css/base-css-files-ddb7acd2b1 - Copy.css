@@ -15300,6 +15300,46 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
     font: 400 12px/18px Helvetica
 }
 
+#forex-signals {
+    padding: 20px;
+}
+
+#forex-signals h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.signals-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.signals-table, .signals-table th, .signals-table td {
+    border: 1px solid #ddd;
+}
+
+.signals-table th, .signals-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.signals-table th {
+    background-color: #f4f4f4;
+}
+
+.open {
+    color: green;
+    font-weight: bold;
+}
+
+.closed {
+    color: red;
+    font-weight: bold;
+}
+
 #news {
     padding: 20px;
     background-color: ; /* Adjust background color as needed */
@@ -15482,40 +15522,3 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
     color: #4caf50;
 }
 
-/* General container styling for ad banners */
-.ad-banner-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Adjust as needed for spacing */
-}
-
-/* Specific container adjustments for each banner */
-.ad-banner-container-top {
-    padding-top: 40px; /* Adjust as needed */
-}
-
-.ad-banner-container-middle, .ad-banner-container-bottom {
-    padding-top: 20px; /* Adjust as needed */
-}
-
-/* Styling for top, middle, and bottom ad banners */
-.ad-banner-top, .ad-banner-middle, .ad-banner-bottom {
-    background-color: #FFC107;
-    height: 90px;
-    width: 970px; /* Set width */
-    text-align: center;
-    line-height: 90px; /* Center text vertically */
-    font-size: 16px; /* Adjust font size as needed */
-}
-
-iframe {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* Set width as desired */
-    height: 480px; /* Set height as desired */
-    border: none; /* Optional: remove border */
-    overflow: hidden; /* Prevents scrolling */
-  }

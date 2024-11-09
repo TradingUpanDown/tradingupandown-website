@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(57, 57, 73) 0%, rgb(36, 36, 46) 100%);
+    color: white;
+}
+
+#root {
+    min-height: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d3a;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    height: 47px;
+    min-width: 144px;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-bar h1 {
+    font-size: 20px;
+    margin: 0; /* Remove default margin */
+}
+
+.confidence, .class-select, .status-select {
+    margin-left: 20px;
+}
+
+input[type="range"] {
+    margin-left: 10px;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.sell-card {
+    background: linear-gradient(360deg, rgb(231, 76, 60) 30%, rgba(36, 36, 46, 1) 75%);
+    background-size: cover;
+    border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.buy-card {
+    background: linear-gradient(360deg, rgb(18, 122, 41) 30%, rgba(36, 36, 46, 1) 75%);
+    background-size: cover;
+    border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.signal-details p {
+    margin: 5px 0;
+}
+
+.chart-container {
+    margin-bottom: 15px;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.buy-button {
+    background-color: #127a29; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.30s;
+}
+
+.buy-button:hover {
+    background-color: #127a29; /* Darker green on hover */
+}
+
+.sell-button {
+    background-color: #e74c3c; /* Red background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 10.30s;
+}
+
+.sell-button:hover {
+    background-color: #e74c3c; /* Darker Red on hover */
+}

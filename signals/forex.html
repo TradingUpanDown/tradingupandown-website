@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingUpAndDown Signals</title>
+    <link rel="icon" href="images/logo/Upandown_Logo_Favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Chart.js Library for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+    </header>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+
+        <!-- EUR/NZD Card -->
+        <div class="card signal">
+            <h3><img src="signals/images/flags/eurnzd.png" width="30" height="30" alt="BTC" class="coin-logo"> EUR/NZD</h3>
+            <canvas id="eurNzdChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- EUR/GBP Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/xrp-xrp-logo.png" width="30" height="30" alt="XRP" class="coin-logo"> EUR/GBP</h3>
+            <canvas id="eurGbpChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- EUR/JPY Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/ethereum-eth-logo.png" width="30" height="30" alt="ETH" class="coin-logo"> EUR/JPY</h3>
+            <canvas id="eurJpyChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- EUR/SEK Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/bitcoin-btc-logo.png" width="30" height="30" alt="BTC" class="coin-logo"> EUR/SEK</h3>
+            <canvas id="eurSekChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- EUR/USD Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/xrp-xrp-logo.png" width="30" height="30" alt="XRP" class="coin-logo"> EUR/USD</h3>
+            <canvas id="eurUsdChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- EUR/CHF Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/ethereum-eth-logo.png" width="30" height="30" alt="ETH" class="coin-logo"> EUR/CHF</h3>
+            <canvas id="eurChfChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+        
+        <!-- GBP/CHF Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/bitcoin-btc-logo.png" width="30" height="30" alt="BTC" class="coin-logo"> GBP/CHF</h3>
+            <canvas id="gbpChfChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- USD/CHF Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/xrp-xrp-logo.png" width="30" height="30" alt="XRP" class="coin-logo"> USD/CHF</h3>
+            <canvas id="usdChfChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- USD/CHF Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/ethereum-eth-logo.png" width="30" height="30" alt="ETH" class="coin-logo"> USD/CHF</h3>
+            <canvas id="usdCadChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- USD/TRY Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/bitcoin-btc-logo.png" width="30" height="30" alt="BTC" class="coin-logo"> USD/TRY</h3>
+            <canvas id="usdCadChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- AUD/JPY Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/xrp-xrp-logo.png" width="30" height="30" alt="XRP" class="coin-logo"> AUD/JPY</h3>
+            <canvas id="audJpyChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- USD/JPY Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/ethereum-eth-logo.png" width="30" height="30" alt="ETH" class="coin-logo"> USD/JPY</h3>
+            <canvas id="usdJpyChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- GBP/USD Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/ethereum-eth-logo.png" width="30" height="30" alt="ETH" class="coin-logo"> GBP/USD</h3>
+            <canvas id="gbpUsdChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- GBP/JPY Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/ethereum-eth-logo.png" width="30" height="30" alt="ETH" class="coin-logo"> GBP/JPY</h3>
+            <canvas id="gbpJpyChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+
+        <!-- AUD/USD Card -->
+        <div class="card signal">
+            <h3><img src="images/icons/crypto-icons/ethereum-eth-logo.png" width="30" height="30" alt="ETH" class="coin-logo"> AUD/USD</h3>
+            <canvas id="audUsdChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00  - 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 - 19:00</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 50%</p>
+                <p><strong>Stop:</strong> 70,250</p>
+                <p><strong>Entry:</strong> 69,250</p>
+                <p><strong>Target:</strong> 65,750</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+    <!-- External Script for Charts -->
+    <script>
+        // Chart.js for displaying price data for multiple assets
+        function createChart(chartId, data) {
+            var ctx = document.getElementById(chartId).getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        label: data.label,
+                        data: data.prices,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2,
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: false
+                        }
+                    }
+                }
+            });
+        }
+
+        // Updated prices for each currency pair
+        createChart('eurNzdChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/NZD Price', prices: [1.17, 1.16, 1.15, 1.16, 1.18] });
+        createChart('eurGbpChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/GBP Price', prices: [0.8570, 0.8585, 0.8560, 0.8590, 0.8575] });
+        createChart('eurJpyChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/JPY Price', prices: [169.50, 170.00, 169.80, 169.60, 169.90] });
+        createChart('eurSekChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/SEK Price', prices: [11.05, 11.06, 11.04, 11.03, 11.07] });
+        createChart('eurUsdChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/USD Price', prices: [1.105, 1.107, 1.106, 1.104, 1.108] });
+        createChart('eurChfChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'EUR/CHF Price', prices: [0.990, 0.992, 0.991, 0.989, 0.993] });
+        createChart('gbpChfChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'GBP/CHF Price', prices: [1.210, 1.213, 1.212, 1.211, 1.215] });
+        createChart('usdChfChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'USD/CHF Price', prices: [0.900, 0.902, 0.901, 0.899, 0.903] });
+        createChart('usdCadChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'USD/CAD Price', prices: [1.380, 1.382, 1.381, 1.379, 1.383] });
+        createChart('usdTryChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'USD/TRY Price', prices: [28.45, 28.47, 28.50, 28.42, 28.48] });
+        createChart('audJpyChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'AUD/JPY Price', prices: [92.60, 92.65, 92.62, 92.58, 92.66] });
+        createChart('usdJpyChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'USD/JPY Price', prices: [148.50, 148.55, 148.53, 148.48, 148.57] });
+        createChart('gbpUsdChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'GBP/USD Price', prices: [1.285, 1.287, 1.286, 1.284, 1.288] });
+        createChart('gbpJpyChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'GBP/JPY Price', prices: [190.20, 190.25, 190.23, 190.18, 190.26] });
+        createChart('audUsdChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'AUD/USD Price', prices: [0.650, 0.652, 0.651, 0.649, 0.653] });
+    </script>
+</div>
+
+
+</body>
+</html>

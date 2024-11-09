@@ -789,18 +789,18 @@ div.dtr-bs-modal table.table tr:first-child td {
     --bs-danger: #000000;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    --bs-primary-rgb: #0950b8;
-    --bs-secondary-rgb: #6c757d;
-    --bs-success-rgb: #ffc107;
-    --bs-info-rgb: #0dcaf0;
-    --bs-warning-rgb: #ffc107;
-    --bs-danger-rgb: #dc3545;
-    --bs-light-rgb: #f8f9fa;
-    --bs-dark-rgb: #212529;
-    --bs-white-rgb: #ffffff;
-    --bs-black-rgb: #000000;
-    --bs-body-color-rgb: #212529;
-    --bs-body-bg-rgb: ffffff;
+    --bs-primary-rgb: 9,80,184;
+    --bs-secondary-rgb: 108,117,125;
+    --bs-success-rgb: 25,135,84;
+    --bs-info-rgb: 13,202,240;
+    --bs-warning-rgb: 255,193,7;
+    --bs-danger-rgb: 220,53,69;
+    --bs-light-rgb: 248,249,250;
+    --bs-dark-rgb: 33,37,41;
+    --bs-white-rgb: 255,255,255;
+    --bs-black-rgb: 0,0,0;
+    --bs-body-color-rgb: 33,37,41;
+    --bs-body-bg-rgb: 255,255,255;
     --bs-font-sans-serif: "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     --bs-gradient: linear-gradient(180deg,rgba(255,255,255,0.15),rgba(255,255,255,0));
@@ -1514,11 +1514,6 @@ progress {
 
 .col-12 {
     width: 100%
-}
-
-
-.col-13 {
-    width: 50%
 }
 
 .offset-1 {
@@ -6771,7 +6766,7 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-    padding-top: 1rem!important;
+    padding-top: 2rem!important;
     padding-bottom: 2rem!important
 }
 
@@ -12381,8 +12376,8 @@ header.position-fixed {
 }
 
 .btn:focus {
-    background-color: #f2a61c;
-    border-color: #f2a61c;
+    background-color: #4fb0ab;
+    border-color: #4fb0ab;
     color: #000
 }
 
@@ -12672,7 +12667,7 @@ header.position-fixed {
 
 footer {
     background-color: #191c1f;
-    padding: 50px 16px
+    padding: 64px 16px
 }
 
 footer .footer-top {
@@ -12691,7 +12686,7 @@ footer .footer-top .primary-title {
 footer .footer {
     word-break: break-word;
     text-align: justify;
-    padding-top: 0px
+    padding-top: 64px
 }
 
 footer .footer .social-network {
@@ -12902,8 +12897,8 @@ body {
     direction: ltr;
     padding: 0;
     margin: 0;
-    background: #f4be1c02;
-    color: #1c1c1c;
+    background: #fafbfa;
+    color: #57575c;
     width: 100%
 }
 
@@ -15247,16 +15242,6 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
     }
 }
 
-.legal-documentation .col-13 {
-    width: 150px
-}
-
-@media (max-width: 200px) {
-    .legal-documentation .col-13 {
-        width:100%
-    }
-}
-
 #riskDisclaimerContainer {
     background-color: #1f1f1f;
     text-align: center;
@@ -15300,10 +15285,50 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
     font: 400 12px/18px Helvetica
 }
 
+#forex-signals {
+    padding: 20px;
+}
+
+#forex-signals h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.signals-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.signals-table, .signals-table th, .signals-table td {
+    border: 1px solid #ddd;
+}
+
+.signals-table th, .signals-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.signals-table th {
+    background-color: #f4f4f4;
+}
+
+.open {
+    color: green;
+    font-weight: bold;
+}
+
+.closed {
+    color: red;
+    font-weight: bold;
+}
+
 #news {
     padding: 20px;
-    background-color: ; /* Adjust background color as needed */
-    border-top: 0px solid #333;
+    background-color: #f9f9f9; /* Adjust background color as needed */
+    border-top: 2px solid #333;
 }
 
 #news h2 {
@@ -15401,121 +15426,39 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
     text-decoration: underline;
 }
 
-.news-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Adjust the gap between columns as needed */
+/* Style for Free Signals section with updated background color */
+#forex-signals {
+    background-color: #f8f9fa; /* Assuming a light gray background from the design */
+    padding: 20px;
+    border-radius: 8px;
 }
 
-/* Card base styling */
 .signal-card {
-    background-color: #1e1e2d;
-    color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33.333% - 20px); /* Three cards per row */
 }
 
-.signal-header {
-    background-color: #28293d;
-    padding: 10px 20px;
-}
-
-.signal-header .flag-icon {
-    width: 20px;
-    height: 14px;
-    margin-right: 5px;
-}
-
-.signal-link {
-    color: #08a0e9;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.signal-link:hover {
-    color: #34b8e9;
-}
-
-.card-body {
-    padding: 15px 20px;
-}
-
-.signal-row {
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.signal-row:last-child {
-    border-bottom: none;
-}
-
-.signal-title {
-    font-weight: 600;
-}
-
-.signal-value {
-    font-weight: 400;
-    color: #b0b0b0;
-}
-
-.signal-color {
-    color: #c7c7c7;
-}
-
-.profit-color {
-    color: #4caf50;
-}
-
-.signal-status {
-    color: #ff9800;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.bi {
-    color: #ff9800;
-    margin-left: 3px;
-}
-
-.profit .signal-value {
-    color: #4caf50;
-}
-
-/* General container styling for ad banners */
-.ad-banner-container {
+.signal-cards {
     display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Adjust as needed for spacing */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
 }
 
-/* Specific container adjustments for each banner */
-.ad-banner-container-top {
-    padding-top: 40px; /* Adjust as needed */
+.detail-row .detail-label {
+    font-weight: bold;
 }
 
-.ad-banner-container-middle, .ad-banner-container-bottom {
-    padding-top: 20px; /* Adjust as needed */
-}
-
-/* Styling for top, middle, and bottom ad banners */
-.ad-banner-top, .ad-banner-middle, .ad-banner-bottom {
-    background-color: #FFC107;
-    height: 90px;
-    width: 970px; /* Set width */
+.chart-placeholder {
+    background-color: #f0f0f0;
+    height: 100px;
+    margin: 10px 0;
     text-align: center;
-    line-height: 90px; /* Center text vertically */
-    font-size: 16px; /* Adjust font size as needed */
+    line-height: 100px;
+    color: #888;
 }
-
-iframe {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* Set width as desired */
-    height: 480px; /* Set height as desired */
-    border: none; /* Optional: remove border */
-    overflow: hidden; /* Prevents scrolling */
-  }

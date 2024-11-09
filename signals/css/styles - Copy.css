@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4bf1c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+}
+
+.logo img {
+    height: 40px;
+    min-width: 144px;
+    margin-left: 15px;
+}
+
+.menu-bar {
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.dashboard {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #48485f;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    color: white;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('images/cards-background1.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.card.signal {
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('images/cards-background1.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.coin-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.signal-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signal-details p {
+    margin: 5px 0;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.buy-button, .sell-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.sell-button {
+    background-color: #e74c3c;
+}
+
+.buy-button:hover, .sell-button:hover {
+    opacity: 0.9;
+}
+
+.actions button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.actions .sell-button {
+    background-color: #e74c3c;
+}
+
+.actions .buy-button {
+    background-color: #3498db;
+}
+
+.actions button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
