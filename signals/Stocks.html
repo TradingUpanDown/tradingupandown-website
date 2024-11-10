@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingUpAndDown Signals</title>
+    <link rel="icon" href="images/logo/Upandown_Logo_Favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Chart.js Library for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Stock cards with logos -->
+
+        <!-- BABA (Alibaba) Card -->
+        <div class="card signal">
+            <h3>BABA (Alibaba)</h3>
+            <canvas id="babaChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 19:53</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+            </div>
+        </div>
+
+        <!-- GOOG (Google) Card -->
+        <div class="card signal">
+            <h3>GOOG (Google)</h3>
+            <canvas id="googChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 19:53</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+            </div>
+        </div>
+
+        <!-- NVDA (NVIDIA) Card -->
+        <div class="card signal">
+            <h3>NVDA (NVIDIA)</h3>
+            <canvas id="nvdaChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 19:53</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+            </div>
+        </div>
+
+        <!-- PTON (Peloton) Card -->
+        <div class="card signal">
+            <h3>PTON (Peloton)</h3>
+            <canvas id="ptonChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 19:53</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+            </div>
+        </div>
+
+        <!-- SHOP (Shopify) Card -->
+        <div class="card signal">
+            <h3>SHOP (Shopify)</h3>
+            <canvas id="shopChart"></canvas>
+            <div class="signal-details">
+                <p><strong>From:</strong> UTC+01:00 15:53</p>
+                <p><strong>Till:</strong> UTC+01:00 19:53</p>
+                <p><strong>Action:</strong> Sell Stop</p>
+                <p><strong>Confidence:</strong> 55%</p>
+                <p><strong>Stop:</strong> 1.2</p>
+                <p><strong>Entry:</strong> 1.15</p>
+                <p><strong>Target:</strong> 1.05</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to create each chart
+        function createChart(chartId, data) {
+            var ctx = document.getElementById(chartId).getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        label: data.label,
+                        data: data.prices,
+                        borderColor: 'rgba(244, 191, 28, 1)',
+                        borderWidth: 2,
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: false
+                        }
+                    }
+                }
+            });
+        }
+
+        // Chart data for each stock
+        createChart('babaChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'BABA Price', prices: [180, 181, 182, 181.5, 183] });
+        createChart('googChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'GOOG Price', prices: [2800, 2795, 2805, 2810, 2802] });
+        createChart('nvdaChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'NVDA Price', prices: [720, 725, 730, 728, 726] });
+        createChart('ptonChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'PTON Price', prices: [30, 30.5, 31, 30.7, 30.9] });
+        createChart('shopChart', { labels: ['10:00', '10:05', '10:10', '10:15', '10:20'], label: 'SHOP Price', prices: [1300, 1310, 1305, 1315, 1312] });
+    </script>
+</body>
+</html>
