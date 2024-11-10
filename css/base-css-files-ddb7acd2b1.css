@@ -170,7 +170,7 @@
 
 .slick-next:before,[dir=rtl] .slick-prev:before {
     content: '';
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 .slick-next {
@@ -12424,7 +12424,7 @@ header.position-fixed {
 }
 
 .btn.btn-with-arrow span:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     content: "";
     width: 1.5rem;
     height: 1.5rem
@@ -13112,11 +13112,11 @@ a:not(.unvisited):not(.btn):visited {
 }
 
 .ud-select .dropdown-toggle:before {
-    background: url(http://tradingupandown.com/assets/documents/angle-small-right.svg) no-repeat
+    background: url(assets/images/icons/system-icons/angle-small-right.png) no-repeat
 }
 
 .ud-select .dropdown-toggle:after {
-    background: url(http://tradingupandown.com/assets/documents/angle-small-right.svg) no-repeat
+    background: url(assets/images/icons/system-icons/angle-small-right.png) no-repeat
 }
 
 .ud-select .dropdown-item-selected {
@@ -13144,7 +13144,7 @@ a:not(.unvisited):not(.btn):visited {
 .ud-select .dropdown-menu .dropdown-item.selected:before {
     content: "";
     display: inline-block;
-    background: url(http://tradingupandown.com/assets/documents/angle-small-right.svg) no-repeat center;
+    background: url(assets/images/icons/system-icons/angle-small-right.png) no-repeat center;
     width: 1rem;
     height: 1rem;
     position: absolute;
@@ -13155,7 +13155,7 @@ a:not(.unvisited):not(.btn):visited {
     appearance: none;
     -webkit-appearance: none;
     background-position: calc(100% - 4px) center;
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     background-repeat: no-repeat;
     background-size: 1.5rem
 }
@@ -13433,7 +13433,7 @@ img[src*="aax-eu.amazon-adsystem.com"] {
     top: .6rem;
     cursor: pointer;
     content: "";
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     left: 1rem
 }
 
@@ -13526,11 +13526,11 @@ table.dataTable thead td.sorting:hover:after,table.dataTable thead td.sorting:ho
 }
 
 table.dataTable thead td.sorting:hover:before,table.dataTable thead th.sorting:hover:before {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 table.dataTable thead td.sorting:hover:after,table.dataTable thead th.sorting:hover:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_asc:before,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_desc:before {
@@ -13547,14 +13547,14 @@ table.dataTable thead .sorting:after,table.dataTable thead .sorting:before,table
 
 table.dataTable thead .sorting:before,table.dataTable thead .sorting_asc:before,table.dataTable thead .sorting_asc_disabled:before,table.dataTable thead .sorting_desc:before,table.dataTable thead .sorting_desc_disabled:before {
     content: " ";
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     top: 5px;
     right: 0
 }
 
 table.dataTable thead .sorting:after,table.dataTable thead .sorting_asc:after,table.dataTable thead .sorting_asc_disabled:after,table.dataTable thead .sorting_desc:after,table.dataTable thead .sorting_desc_disabled:after {
     content: " ";
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     top: 15px;
     right: 0
 }
@@ -13712,11 +13712,11 @@ tr.child .dtr-data {
 }
 
 .dataTables_wrapper .paging_listboxWithButtons .next:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 .dataTables_wrapper .paging_listboxWithButtons .previous:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 #pricewidget td div,.print-container {
@@ -13733,7 +13733,7 @@ tr.child .dtr-data {
 }
 
 .print-container .buttons-print:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     position: absolute;
     z-index: 1;
     top: -10px;
@@ -13777,7 +13777,7 @@ tr.child .dtr-data {
 }
 
 #pricewidget td div.down:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     filter: invert(56%) sepia(67%) saturate(4944%) hue-rotate(331deg) brightness(92%) contrast(96%)
 }
 
@@ -13786,7 +13786,7 @@ tr.child .dtr-data {
 }
 
 #pricewidget td div.up:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     filter: invert(39%) sepia(29%) saturate(2962%) hue-rotate(146deg) brightness(94%) contrast(91%)
 }
 
@@ -13926,7 +13926,7 @@ tr.child .dtr-data {
 }
 
 .logo-gallery-container .play:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 .logo-gallery-container .pause {
@@ -13934,7 +13934,7 @@ tr.child .dtr-data {
 }
 
 .logo-gallery-container .pause:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 .logo-gallery-container .slick-slider {
@@ -14091,7 +14091,7 @@ tr.child .dtr-data {
     position: absolute;
     left: 0;
     top: 2px;
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     background-repeat: no-repeat;
     width: 20px;
     height: 20px
@@ -14108,7 +14108,7 @@ tr.child .dtr-data {
 .dropdown-toggle:after {
     display: inline-block;
     content: "";
-    gpt-4(./http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    gpt-4(./assets/images/icons/system-icons/angle-small-right.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -14143,7 +14143,7 @@ tr.child .dtr-data {
 }
 
 .accordion-button:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)!important
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)!important
 }
 
 .accordion-button.skeleton-loader:after {
@@ -14156,16 +14156,16 @@ tr.child .dtr-data {
 }
 
 .form-select:after {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg);
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png);
     content: ""
 }
 
 .icon-language {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 .icon-chevron-right {
-    background-image: url(http://tradingupandown.com/assets/documents/angle-small-right.svg)
+    background-image: url(assets/images/icons/system-icons/angle-small-right.png)
 }
 
 .icon-chevron-down.gray,.icon-chevron-right.gray {
