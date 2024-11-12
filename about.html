@@ -233,6 +233,104 @@
         </header>
 
         <div id="content" style="margin-top: 59px;">
+            <div class="container-xl py-5" id="web_page_container">
+                <div class="row">
+                    <div class="col-12 col-sm-7 col-md-8 col-lg-9">
+                        <div class="d-flex flex-column">
+                            <nav aria-label="Breadcrumb" class="breadcrumbs_container mb-2">
+                                <a href="https://www.equiti.com/sc-en/" aria-label="breadcrumb-home">
+                                    <i class="breadcrumbs_home"></i>
+                                </a>
+                                <i class="breadcrumbs_arrow"></i>
+                                <span class="breadcrumbs_item page_title" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">FAQs</span>
+                            </nav>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    const breadcrumbItems = document.querySelectorAll('.breadcrumbs_item');
+                                    breadcrumbItems.forEach(item => {
+                                        const fullText = item.textContent.trim();
+                                        const words = fullText.split(' ');
+                                        if (words.length > 3 || fullText.length > 30) {
+                                            let truncatedText = words.slice(0, 3).join(' ');
+                                            if (truncatedText.length > 30) {
+                                                truncatedText = truncatedText.substring(0, 30);
+                                            }
+                                            item.textContent = truncatedText.replace(/[:;,.\-_]$/, '');
+                                            item.setAttribute('title', fullText);
+                                        } else {
+                                            const cleanText = fullText.replace(/[:;,.\-_]$/, '');
+                                            item.textContent = cleanText;
+                                            if (cleanText !== fullText) {
+                                                item.setAttribute('title', fullText);
+                                            } else {
+                                                item.removeAttribute('title');
+                                            }
+                                        }
+                                    });
+        
+                                    if (typeof bootstrap !== 'undefined' && bootstrap.Tooltip) {
+                                        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                                        tooltipTriggerList.map(function(tooltipTriggerEl) {
+                                            return new bootstrap.Tooltip(tooltipTriggerEl);
+                                        });
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Header Row -->
+            <div class="d-flex align-items-center container-fluid header-row header-row-default hrd--min p-0 py-3 py-md-5 dark">
+                <div class="container-xl">
+                    <div class="col-12 col-lg-8 m-auto text-center">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="eyebrow text-uppercase mb-2">EQUITI FAQS</div>
+                            <h1 class="col-12 col-lg-9 m-0 mx-auto">We're here to help</h1>
+                            <div class="d-flex align-items-start flex-column flex-sm-row gap-3 cta-actions">
+                                <a href="http://portal.my-equiti.com/sc/register" class="btn btn-primary-cta">START TRADING</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Accordion Section -->
+            <div class="container-fluid default">
+                <div class="container-xl py-6">
+                    <div class="accordion-block col-12 col-lg-8 m-auto px-0 px-lg-1">
+                        <div class="col-12 px-3 mb-2">
+                            <h3 class="title">About Equiti FAQs</h3>
+                        </div>
+        
+                        <div class="accordion-container">
+                            <!-- FAQ Item 1 -->
+                            <div class="accordion" id="accordionBlock_2_1_1_1">
+                                <div class="accordion-item">
+                                    <span class="accordion-header" id="heading_2_1_1_1">
+                                        <h3 class="h5 accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse_2_1_1_1" aria-expanded="true" aria-controls="collapse_2_1_1_1">
+                                            <span>Who is Equiti?</span>
+                                        </h3>
+                                    </span>
+                                    <div id="collapse_2_1_1_1" class="accordion-collapse collapse show" aria-labelledby="heading_2_1_1_1" data-bs-parent="#accordionBlock_2_1_1_1">
+                                        <div class="accordion-body">
+                                            <p>Equiti is a fintech firm providing digital tech for trading financial assets on an online trading environment. With hundreds of global specialists and 24/6 customer service in 6 languages, we provide access to individual, professional, and institutional brokerage services across various affiliates and subsidiaries.</p>
+                                            <p>You are currently visiting Equiti Brokerage (Seychelles), which is regulated by the FSA (Seychelles Financial Services Authority).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Additional FAQ Items can be added here following the same structure -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="content" style="margin-top: 59px;">
             <!-- Main content goes here -->
             <div class="ad-banner-container ad-banner-container-top">
                 <div class="ad-banner-top">Ad - 970x90 px</div>
