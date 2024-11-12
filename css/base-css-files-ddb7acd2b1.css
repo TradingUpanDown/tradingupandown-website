@@ -14740,11 +14740,11 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
 }
 
 .breadcrumbs_container .breadcrumbs_item.arabic {
-    color: #006b67
+    color: #f4bf1c
 }
 
 .breadcrumbs_container .breadcrumbs_item.page_title {
-    color: #006b67;
+    color: #f4bf1c;
     font-family: "Inter",sans-serif;
     font-weight: 600;
     line-height: 20px;
