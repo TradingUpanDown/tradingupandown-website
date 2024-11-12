@@ -273,7 +273,7 @@
                         <div class="col-12 mb-3">
                             <section id="forex-signals">
                                 <h2 class="mb-3 card-title">Free Signals</h2>
-                                <iframe src="signals/dauly_free_signal.html" scrolling="no"></iframe>
+                                <iframe src="signals/daily_free_signal.html" scrolling="no"></iframe>
                             </section>
                         </div>
                     </div>
@@ -608,18 +608,23 @@
             </div>
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            // Adjust content margin based on header height
+            // Adjust content margin based on header height if jQuery is available
             function adjustContentMargin() {
                 $('#content').css('margin-top', $('header').outerHeight());
             }
 
-            adjustContentMargin();
-            $(window).resize(adjustContentMargin);
+            $(document).ready(function() {
+                adjustContentMargin();
+                $(window).resize(adjustContentMargin);
+            });
         </script>
+
         <script defer="" src="js/home-page.js"></script>
         <script defer="" src="js/main-js-defer-files-8064f1bbd6.js"></script>
         <script src="js/main-js-files-fe59f0d9e4.js"></script>
+
     </body>
 </html>
 
