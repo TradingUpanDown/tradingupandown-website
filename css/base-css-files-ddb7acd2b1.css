@@ -105,7 +105,7 @@
 }
 
 .slick-loading .slick-list {
-    background: #fff url(./../../images/ajax-loader.gif) center center no-repeat
+    background: #fff url(http://tradingupandown.com/assets/images/ajax-loader.gif) center center no-repeat
 }
 
 .slick-next,.slick-prev {
@@ -162,7 +162,7 @@
 
 .slick-prev:before {
     content: '';
-    background-image: url(./../../images/icons/system-icons/chevron_left.svg);
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/chevron_left.svg);
     background-repeat: no-repeat;
     background-size: 36px 36px;
     background-position: center
@@ -190,7 +190,7 @@
 
 [dir=rtl] .slick-next:before {
     content: '';
-    background-image: url(./../../images/icons/system-icons/chevron_left.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/chevron_left.svg)
 }
 
 .slick-dotted.slick-slider {
@@ -452,11 +452,11 @@ table.dataTable>thead .sorting_asc:before,table.dataTable>thead .sorting_desc:af
 }
 
 table.dataTable>thead .sorting_asc:before {
-    background-image: url(./../images/icons/system-icons/arrow_drop_up-color.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/arrow_drop_up-color.svg)
 }
 
 table.dataTable>thead .sorting_desc:after {
-    background-image: url(./../images/icons/system-icons/arrow_drop_down-color.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/arrow_drop_down-color.svg)
 }
 
 table.dataTable>thead .sorting_asc_disabled:before,table.dataTable>thead .sorting_desc_disabled:after {
@@ -577,7 +577,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before,table.dataTa
     line-height: 1em;
     content: "";
     background-position: center;
-    background-image: url(../images/icons/system-icons/expand_more.svg);
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/expand_more.svg);
     transition: transform .2s ease-in-out
 }
 
@@ -11629,7 +11629,7 @@ textarea.form-control-lg {
 
 @font-face {
     font-family: Gilroy;
-    src: url(./../../fonts/gilroy/Gilroy-Regular.woff2) format("woff2"),url(./../../fonts/gilroy/Gilroy-Regular.woff) format("woff"),url(./../../fonts/gilroy/Gilroy-Regular.ttf) format("truetype"),url(./../../fonts/gilroy/Gilroy-Regular.svg#Gilroy-Regular) format("svg");
+    src: url(http://tradingupandown.com/assetshttp://tradingupandown.com) format("woff2"),url(http://tradingupandown.com/assets/fonts/gilroy/Gilroy-Regular.woff) format("woff"),url(http://tradingupandown.com/assets/fonts/gilroy/Gilroy-Regular.ttf) format("truetype"),url(http://tradingupandown.com/assets/fonts/gilroy/Gilroy-Regular.svg#Gilroy-Regular) format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -11637,7 +11637,7 @@ textarea.form-control-lg {
 
 @font-face {
     font-family: Gilroy SemiBold;
-    src: url(./../../fonts/gilroy/Gilroy-SemiBold.woff2) format("woff2"),url(./../../fonts/gilroy/Gilroy-SemiBold.woff) format("woff"),url(./../../fonts/gilroy/Gilroy-SemiBold.ttf) format("truetype"),url(./../../fonts/gilroy/Gilroy-SemiBold.svg#Gilroy-SemiBold) format("svg");
+    src: url(http://tradingupandown.com/assets/fonts/gilroy/Gilroy-SemiBold.woff2) format("woff2"),url(http://tradingupandown.com/assets/fonts/gilroy/Gilroy-SemiBold.woff) format("woff"),url(http://tradingupandown.com/assets/fonts/gilroy/Gilroy-SemiBold.ttf) format("truetype"),url(http://tradingupandown.com/assets/fonts/gilroy/Gilroy-SemiBold.svg#Gilroy-SemiBold) format("svg");
     font-weight: 600;
     font-style: normal;
     font-display: swap
@@ -12811,7 +12811,7 @@ footer .footer .block-support_columns ul li span {
 }
 
 footer .footer .block-support_columns ul li .icon-email {
-    background: url(../../images/icons/icon-email.svg) no-repeat;
+    background: url(http://tradingupandown.com/assets/images/icons/icon-email.svg) no-repeat;
     background-size: 100% 100%;
     width: 16px;
     height: 20px
@@ -14108,7 +14108,7 @@ tr.child .dtr-data {
 .dropdown-toggle:after {
     display: inline-block;
     content: "";
-    gpt-4(./http://tradingupandown.com/assets/images/icons/system-icons/angle-small-right.png);
+    gpt-4(http://tradingupandown.com/assets/images/icons/system-icons/angle-small-right.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -14119,15 +14119,15 @@ tr.child .dtr-data {
 }
 
 .btn-close,.navbar-toggler[aria-expanded=true] .icon-login,.navbar-toggler[aria-expanded=true] .icon-menu {
-    background-image: url(./../../images/icons/system-icons/close.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/close.svg)
 }
 
 .icon-login {
-    background-image: url(./../../images/icons/system-icons/login.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/login.svg)
 }
 
 .icon-info-header {
-    background-image: url(./../../images/icons/system-icons/info_header.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/info_header.svg)
 }
 
 .icon-info-header.alert-icon {
@@ -14135,7 +14135,7 @@ tr.child .dtr-data {
 }
 
 .icon-alert-header {
-    background-image: url(./../../images/icons/system-icons/alert_header.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/alert_header.svg)
 }
 
 .icon-alert-header.alert-icon {
@@ -14152,7 +14152,7 @@ tr.child .dtr-data {
 }
 
 .icon-menu,.icon-menu.navbar-toggler-icon {
-    background-image: url(./../../images/icons/system-icons/menu.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/menu.svg)
 }
 
 .form-select:after {
@@ -14173,67 +14173,67 @@ tr.child .dtr-data {
 }
 
 .icon-chevron-left {
-    background-image: url(./../../images/icons/system-icons/chevron_left.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/chevron_left.svg)
 }
 
 .icon-chevron-down {
-    background-image: url(./../../images/icons/system-icons/chevron_down.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/chevron_down.svg)
 }
 
 .icon-info {
-    background-image: url(./../../images/icons/system-icons/info.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/info.svg)
 }
 
 .dot {
-    background-image: url(./../../images/icons/system-icons/dot.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/dot.svg)
 }
 
 .icon-facebook {
-    background-image: url(./../../images/icons/system-icons/facebook.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/facebook.svg)
 }
 
 .icon-twitter {
-    background-image: url(./../../images/icons/system-icons/twitter.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/twitter.svg)
 }
 
 .icon-copy-page {
-    background-image: url(./../../images/icons/system-icons/copy_page_to_clipboard.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/copy_page_to_clipboard.svg)
 }
 
 .icon-share {
-    background-image: url(./../../images/icons/system-icons/share.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/share.svg)
 }
 
 .icon-linkedin {
-    background-image: url(./../../images/icons/system-icons/linkedin.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/linkedin.svg)
 }
 
 .icon-whatsapp {
-    background-image: url(./../../images/icons/system-icons/whatsapp.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/whatsapp.svg)
 }
 
 .icon-telegram {
-    background-image: url(./../../images/icons/system-icons/telegram.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/telegram.svg)
 }
 
 .icon-reddit {
-    background-image: url(./../../images/icons/system-icons/reddit.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/reddit.svg)
 }
 
 .icon-pocket {
-    background-image: url(./../../images/icons/system-icons/pocket.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/pocket.svg)
 }
 
 .icon-email {
-    background-image: url(./../../images/icons/system-icons/email.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/email.svg)
 }
 
 .icon-download {
-    background-image: url(./../../images/icons/system-icons/download.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/download.svg)
 }
 
 .icon-preview {
-    background-image: url(./../../images/icons/system-icons/preview.svg)
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/preview.svg)
 }
 
 .accordion-button::after,.btn-close,.dot,.dropdown-toggle::after,.icon-alert-header,.icon-chevron-down,.icon-chevron-left,.icon-chevron-right,.icon-copy-page,.icon-download,.icon-email,.icon-facebook,.icon-info,.icon-info-header,.icon-language,.icon-linkedin,.icon-login,.icon-menu,.icon-pocket,.icon-preview,.icon-reddit,.icon-telegram,.icon-twitter,.icon-whatsapp {
@@ -14752,14 +14752,14 @@ body.enable-skeleton-loading .skeleton-table-loader td:after,body.enable-skeleto
 }
 
 .breadcrumbs_container .breadcrumbs_home {
-    background-image: url(./../../images/icons/system-icons/breadcrumbs_home_new.svg);
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/breadcrumbs_home_new.svg);
     color: #667085;
     width: 16px;
     height: 16px
 }
 
 .breadcrumbs_container .breadcrumbs_arrow {
-    background-image: url(./../../images/icons/system-icons/chevron-right_new.svg);
+    background-image: url(http://tradingupandown.com/assets/images/icons/system-icons/chevron-right_new.svg);
     color: #d0d5dd;
     width: 20px;
     height: 20px
