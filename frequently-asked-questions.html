@@ -20,8 +20,8 @@
         <meta property="og:type" content="website">
         <meta name="google-adsense-account" content="ca-pub-8340435460300155">
         
-        <link href="http://tradingupandown.com/css/base-css-files-ddb7acd2b1.css" rel="stylesheet"/>
-        <script src="http://tradingupandown.com/js/main-js-files-fe59f0d9e4.js"></script>
+        <link href="css/base-css-files-ddb7acd2b1.css" rel="stylesheet"/>
+        <script src="js/main-js-files-fe59f0d9e4.js"></script>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NPTPN859K"></script>
@@ -33,16 +33,25 @@
 
             gtag('config', 'G-8NPTPN859K');
         </script>
-        <script>
-            setInterval(() => {
-                location.reload();
-            }, 60000); // 60000 milliseconds = 1 minute
-        </script>
+
     </head>
 
     <body>
         <!-- Header Section -->
         <header class="position-fixed top-0 w-100">
+            <div class="navbar-nav secondary_nav d-none-m-important d-lg-flex">
+                <div class="container-xl">
+                    <div class="d-flex align-items-center justify-content-between px-lg-4">
+                        <div class="company-information"></div>
+                        <div class="d-none d-lg-flex justify-content-lg-end gap-3">
+                            <div class="nav-item sign-in-block">
+                            </div>
+                            <div class="navbar-light block-language">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <nav class="navbar navbar-expand-lg navbar-light py-0 py-lg-2 stickyOnScroll">
                 <div class="container-xl d-flex align-items-center justify-content-between px-0 px-lg-4">
                     <a class="navbar-brand d-none d-lg-block" href="#">
@@ -56,7 +65,7 @@
                             <div class="d-none d-sm-inline-flex">
                                 <a href="register" class="btn btn-primary-cta d-block unvisited">START COPY SIGNALS</a>
                             </div>
-                            <a class="navbar-toggler px-0" href="#/auth/login">
+                            <a class="navbar-toggler px-0" href="auth/login">
                                 <span class="icon-login"></span>
                                 <span class="navbar-toggler-text">Sign in</span>
                             </a>
@@ -180,27 +189,27 @@
                                     <ul class="dropdown-menu">
                                         <li class="d-flex flex-column flex-lg-row gap-3 gap-lg-8">
                                             <div class="d-flex gap-3 flex-column">
-                                                <a href="/trading-tools/" class="dropdown-item p-0 unvisited  text-decoration-none">
+                                                <a href="trading-tools/" class="dropdown-item p-0 unvisited  text-decoration-none">
                                                     <img src="assets/images/icons/system-icons/angle-small-right.png" alt="TradingView">
                                                     TradingView
                                                 </a>
-                                                <a href="/education/" class="dropdown-item p-0 unvisited  text-decoration-none">
+                                                <a href="education/" class="dropdown-item p-0 unvisited  text-decoration-none">
                                                     <img src="assets/images/icons/system-icons/angle-small-right.png" alt="Twitter - X">
                                                     Twitter - X
                                                 </a>
-                                                <a href="/news/" class="dropdown-item p-0 unvisited  text-decoration-none">
+                                                <a href="news/" class="dropdown-item p-0 unvisited  text-decoration-none">
                                                     <img src="assets/images/icons/system-icons/angle-small-right.png" alt="Youtube">
                                                     Youtube
                                                 </a>
-                                                <a href="/trading-tools/" class="dropdown-item p-0 unvisited  text-decoration-none">
+                                                <a href="trading-tools/" class="dropdown-item p-0 unvisited  text-decoration-none">
                                                     <img src="assets/images/icons/system-icons/angle-small-right.png" alt="Facebook">
                                                     Facebook
                                                 </a>
-                                                <a href="/education/" class="dropdown-item p-0 unvisited  text-decoration-none">
+                                                <a href="education/" class="dropdown-item p-0 unvisited  text-decoration-none">
                                                     <img src="assets/images/icons/system-icons/angle-small-right.png" alt="Tiktok">
                                                     Tiktok
                                                 </a>
-                                                <a href="/news/" class="dropdown-item p-0 unvisited  text-decoration-none">
+                                                <a href="news/" class="dropdown-item p-0 unvisited  text-decoration-none">
                                                     <img src="assets/images/icons/system-icons/angle-small-right.png" alt="Discord">
                                                     Discord
                                                 </a>
@@ -223,58 +232,7 @@
             </nav>
         </header>
 
-        <div id="content" style="margin-top: 59px;">
-            <!-- Main content goes here -->
-            <div class="ad-banner-container ad-banner-container-top">
-                <div class="ad-banner-top">Ad - 970x90 px</div>
-            </div>
-            <div class="d-flex align-items-center container-fluid header-row hrd--min p-0 py-3 py-md-5 default">
-                <div class="container-xl d-flex flex-column flex-md-row">
-                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center gap-3">
-                        <div>
-                            <h1 class="m-0">Trade Smarter</h1>
-                            <h1 class="m-0">with Real-Time Signals</h1>
-                        </div>
-                        <div>
-                            <p class="h5 m-0 subtitle">Unlock live signals and expert insights with TradingUpAndDown. Get signals for forex, indices, commodities, and crypto, anytime, anywhere online.</p>
-                        </div>
-                        <div class="d-flex align-items-start flex-column flex-sm-row gap-3 cta-actions">
-                            <a href="#register" class="btn btn-primary-cta">START SIGNAL TRADING</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 mt-5 mt-md-0 px-3">
-                        <picture>
-                            <source srcset="assets/images/png/Homepage-Hero.original.png" type="image/webp">
-                            <img src="assets/images/png/Homepage-Hero.original.png" width="1200" height="1200" alt="Homepage Hero" class="img-fluid">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-            <div>
-                
-            </div>
-            <div class="container-fluid py-6">
-                <div class="container-xl">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <section id="forex-signals">
-                                <h2 class="mb-3 card-title">Free Signals</h2>
-                                <iframe src="signals/daily_free_signal.html" scrolling="no"></iframe>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Middle banner -->
-        <div class="ad-banner-container ad-banner-container-middle">
-            <div class="ad-banner-middle">Ad - 970x90 px</div>
-        </div>
-
-        <div class="ad-banner-container ad-banner-container-bottom">
-            <div class="ad-banner-bottom">Ad - 970x90 px</div>
-        </div>
+        
         
         <footer>
             <div class="footer">
@@ -287,19 +245,19 @@
                                 </a>
                             </div>
                             <div class="social-network mt-4 mt-sm-0 d-flex flex-wrap gap-2 gap-md-4">
-                                <a href="#https://www.facebook.com/tradingupandown//" title="Facebook" target="_blank">
+                                <a href="https://www.facebook.com/tradingupandown/" title="Facebook" target="_blank">
                                     <img src="assets/images/svg/facebook_OZDbkDP.svg" class="social-icon" width="24" height="24" alt="Facebook">
                                 </a>
-                                <a href="#https://twitter.com/tradingupandown/" title="X" target="_blank">
+                                <a href="https://twitter.com/tradingupandown/" title="X" target="_blank">
                                     <img src="assets/images/svg/TwitterX.svg" class="social-icon" width="24" height="24" alt="X (Twitter)">
                                 </a>
-                                <a href="#https://www.instagram.com/tradingupandown/" title="Instagram" target="_blank">
+                                <a href="https://www.instagram.com/tradingupandown/" title="Instagram" target="_blank">
                                     <img src="assets/images/svg/instagram_BOVNLvi.svg" class="social-icon" width="24" height="24" alt="Instagram">
                                 </a>
-                                <a href="#https://www.youtube.com/channel/tradingupandown/" title="YouTube" target="_blank">
+                                <a href="https://www.youtube.com/channel/tradingupandown/" title="YouTube" target="_blank">
                                     <img src="assets/images/svg/youtube_kDZ5hEl.svg" class="social-icon" width="24" height="24" alt="YouTube">
                                 </a>
-                                <a href="#https://www.linkedin.com/company/tradingupandown/" title="LinkedIn" target="_blank">
+                                <a href="https://www.linkedin.com/company/tradingupandown/" title="LinkedIn" target="_blank">
                                     <img src="assets/images/svg/linkedin_7mDS4co.svg" class="social-icon" width="24" height="24" alt="LinkedIn">
                                 </a>
                             </div>
@@ -313,19 +271,19 @@
                                 </div>
                                 <hr>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Forex</a>
+                                    <a href="signals/forex.html" class="page-link">Forex</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Indices</a>
+                                    <a href="signals/Indices.html" class="page-link">Indices</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Commodities</a>
+                                    <a href="signals/Commodities.html" class="page-link">Commodities</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Crypto CFDs</a>
+                                    <a href="signals/crypto.html" class="page-link">Crypto CFDs</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Stocks</a>
+                                    <a href="signals/Stocks.html" class="page-link">Stocks</a>
                                 </div>
                             </div>
                             <div class="block-column">
@@ -334,13 +292,13 @@
                                 </div>
                                 <hr>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">News</a>
+                                    <a href="news.html" class="page-link">News</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Education</a>
+                                    <a href="education/education.html" class="page-link">Education</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Trading tools</a>
+                                    <a href="tools/trading_tools.html" class="page-link">Trading tools</a>
                                 </div>
                             </div>
                             <div class="block-column">
@@ -349,13 +307,13 @@
                                 </div>
                                 <hr>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Meta Trader 4</a>
+                                    <a href="https://www.metatrader4.com/en/download" class="page-link">Meta Trader 4</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">Meta Trader 5</a>
+                                    <a href="https://www.metatrader4.com/en/download" class="page-link">Meta Trader 5</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="#" class="page-link">All PLatforms</a>
+                                    <a href="https://www.tradingview.com/" class="page-link">Tradingview</a>
                                 </div>
                             </div>
                             <div class="block-column">
@@ -364,13 +322,13 @@
                                 </div>
                                 <hr>
                                 <div class="block-page_link">
-                                    <a href="/terms_and_conditions.html" class="page-link">Terms Of Use</a>
+                                    <a href="legal/terms_and_conditions.html" class="page-link">Terms Of Use</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="/privacy_policy.html" class="page-link">Privacy Policy</a>
+                                    <a href="legal/privacy_policy.html" class="page-link">Privacy Policy</a>
                                 </div>
                                 <div class="block-page_link">
-                                    <a href="/disclaimer.html" class="page-link">Disclaimer</a>
+                                    <a href="legal/disclaimer.html" class="page-link">Disclaimer</a>
                                 </div>
                             </div>
                             <div class="block-column">
@@ -379,7 +337,7 @@
                                 </div>
                                 <hr>
                                 <div class="block-page_link">
-                                    <a href="/about.html" class="page-link">About us</a>
+                                    <a href="about.html" class="page-link">About us</a>
                                 </div>
                             </div>
                         </div>
@@ -389,11 +347,11 @@
                             <ul class="list-unstyled d-flex flex-column gap-3">
                                 <li class="d-flex align-items-start gap-2">
                                     <img src="assets/images/svg/email_jdEIIQc.svg" width="24" height="24" alt="Email">
-                                    <a href="mailto:support.sey@TradingUpanDown.com" class="page-link">Email</a>
+                                    <a href="mailto:support@tradingUpanDown.com" class="page-link">Email</a>
                                 </li>
                                 <li class="d-flex align-items-start gap-2">
                                     <img src="assets/images/svg/faqs_JcdF61K.svg" width="24" height="24" alt="FAQs">
-                                    <a href="#" class="page-link">FAQs</a>
+                                    <a href="frequently-asked-questions.html" class="page-link">FAQs</a>
                                 </li>
                             </ul>
                         </div>
@@ -406,6 +364,13 @@
         </footer>
 
         <div class="yellow-line" style="background-color: #FFC107; height: 15px; width: 100%;"></div>
+        <div class="modal fade" id="demoFormModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body"></div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
