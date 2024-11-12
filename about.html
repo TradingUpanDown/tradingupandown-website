@@ -238,44 +238,12 @@
                     <div class="col-12 col-sm-7 col-md-8 col-lg-9">
                         <div class="d-flex flex-column">
                             <nav aria-label="Breadcrumb" class="breadcrumbs_container mb-2">
-                                <a href="https://www.equiti.com/sc-en/" aria-label="breadcrumb-home">
+                                <a href="http://tradingupandown.com/" aria-label="breadcrumb-home">
                                     <i class="breadcrumbs_home"></i>
                                 </a>
                                 <i class="breadcrumbs_arrow"></i>
                                 <span class="breadcrumbs_item page_title" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">FAQs</span>
                             </nav>
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function() {
-                                    const breadcrumbItems = document.querySelectorAll('.breadcrumbs_item');
-                                    breadcrumbItems.forEach(item => {
-                                        const fullText = item.textContent.trim();
-                                        const words = fullText.split(' ');
-                                        if (words.length > 3 || fullText.length > 30) {
-                                            let truncatedText = words.slice(0, 3).join(' ');
-                                            if (truncatedText.length > 30) {
-                                                truncatedText = truncatedText.substring(0, 30);
-                                            }
-                                            item.textContent = truncatedText.replace(/[:;,.\-_]$/, '');
-                                            item.setAttribute('title', fullText);
-                                        } else {
-                                            const cleanText = fullText.replace(/[:;,.\-_]$/, '');
-                                            item.textContent = cleanText;
-                                            if (cleanText !== fullText) {
-                                                item.setAttribute('title', fullText);
-                                            } else {
-                                                item.removeAttribute('title');
-                                            }
-                                        }
-                                    });
-        
-                                    if (typeof bootstrap !== 'undefined' && bootstrap.Tooltip) {
-                                        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-                                        tooltipTriggerList.map(function(tooltipTriggerEl) {
-                                            return new bootstrap.Tooltip(tooltipTriggerEl);
-                                        });
-                                    }
-                                });
-                            </script>
                         </div>
                     </div>
                 </div>
@@ -286,10 +254,10 @@
                 <div class="container-xl">
                     <div class="col-12 col-lg-8 m-auto text-center">
                         <div class="d-flex flex-column justify-content-center align-items-center">
-                            <div class="eyebrow text-uppercase mb-2">EQUITI FAQS</div>
-                            <h1 class="col-12 col-lg-9 m-0 mx-auto">We're here to help</h1>
+                            <div class="eyebrow text-uppercase mb-2">Tradingupandown FAQS</div>
+                            <h1 class="col-12 col-lg-9 m-0 mx-auto">We're here to help you become a profitable trader</h1>
                             <div class="d-flex align-items-start flex-column flex-sm-row gap-3 cta-actions">
-                                <a href="http://portal.my-equiti.com/sc/register" class="btn btn-primary-cta">START TRADING</a>
+                                <a href="http://tradingupandown.com/register" class="btn btn-primary-cta">START COPY SIGNALS</a>
                             </div>
                         </div>
                     </div>
