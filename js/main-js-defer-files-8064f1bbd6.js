@@ -13399,7 +13399,7 @@ function() {
             t.set._ = [],
             e.async = !0,
             e.setAttribute("charset", "utf-8"),
-            e.src = "https://static.zdassets.com/ekr/asset_composer.js?key=32989c05-f4da-4bb2-8ca1-46a3bd8516fa",
+            e.src = "js/asset_composer.js?key=32989c05-f4da-4bb2-8ca1-46a3bd8516fa",
             t.t = +new Date,
             e.type = "text/javascript",
             a.parentNode.insertBefore(e, a)
@@ -13407,7 +13407,7 @@ function() {
         let i = setInterval(function() {
             void 0 !== window.$zopim && void 0 !== window.$zopim.livechat && ($zopim(function() {
                 $zopim.livechat.connectOnPageLoad = !1,
-                n && $zopim.livechat.concierge.setAvatar("https://equiti.com/media/2119/fav.png"),
+                n && $zopim.livechat.concierge.setAvatar("assets/images/logo/fav.png"),
                 a && ("number" == typeof a ? $zopim.livechat.departments.filter(a) : $zopim.livechat.departments.filter.apply(null, a.split(",").filter(e => e.trim().length && !isNaN(e)).map(Number))),
                 $zopim.livechat.setLanguage(lang),
                 "ar" === lang && ($zopim.livechat.button.setPosition("bl"),
